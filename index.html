@@ -9,5 +9,9 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      var redirectTo = window.location.pathname.replace('/routes', '');
+      window.location.href = "/routes/#" + redirectTo;
+    </script>
   </body>
 </html>
